@@ -1,16 +1,17 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Categories from "./components/CategorySection";
+import Designers from "./components/DesignerSection";
 
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products/:category" element={<Products />} />
-      </Routes>
-    </BrowserRouter>
+      <Hero />
+      <Categories />
+      <Designers />
+    </>
   );
 }
+
+export default App;

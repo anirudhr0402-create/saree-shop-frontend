@@ -1,0 +1,34 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #bbb6b1;   /* 👈 soft luxury beige */
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #de1616;
+}
+
+.logo span {
+  color: #c19a6b;
+}
+
+.menu span {
+  margin: 0 15px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #e5dada;
+  letter-spacing: 1px;
+}
+
+.menu span:hover {
+  color: #c19a6b;
+}
